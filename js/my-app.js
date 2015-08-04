@@ -17,6 +17,8 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
+//myApp.popover('.popover-about', '.open-popover');
+
 
 // Generate dynamic page
 var dynamicPageIndex = 0;

@@ -19,7 +19,7 @@
   <body>
     <!-- Views -->
     <div class="views">
-      <!-- Your main view, should have "view-main" class -->
+      <!-- Your main view, should have "view-main " class -->
       <div class="view view-main">
         <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-fixed toolbar-fixed">
@@ -37,7 +37,7 @@
             <div class="toolbar">
               <div class="toolbar-inner">
                 <!-- Toolbar links -->
-                <a href="#" class="link">Link 1</a>
+                <a href="#"  data-popover=".popover-about" class="link open-popover">Link 1</a>
                 <a href="#" class="link">Link 2</a>
               </div>
             </div>
@@ -52,6 +52,19 @@
         </div>
       </div>
     </div>
+
+    <div class="popover popover-about">
+    <div class="popover-angle"></div>
+    <div class="popover-inner">
+      <div class="content-block">
+        <p>About</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac diam ac quam euismod porta vel a nunc. Quisque sodales scelerisque est, at porta justo cursus ac.</p>
+      </div>
+    </div>
+  </div>
+    <!-- Path to cordova JS-->
+    <script type="text/javascript" src="js/cordova/cordova.js"></script>
+    <script type="text/javascript" src="js/cordova/index.js"></script>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
