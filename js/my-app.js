@@ -18,6 +18,40 @@ myApp.onPageInit('about', function (page) {
     });
 });
 myApp.popover('.popover-about', '.open-popover');
+myApp.addNotification({
+    message: 'Simples message',
+    button: {
+                text: 'Close Me',
+                color: 'lightgreen'
+            },
+    });
+
+$$('.link2').on('click', function(event){
+    myApp.addNotification({
+    message: 'Link clicked',
+    button: {
+                text: 'Close Me',
+                color: 'lightgreen'
+            },
+    });
+});
+
+
+
+/*=== Default standalone ===*/
+var myPhotoBrowserStandalone = myApp.photoBrowser({
+    photos : [
+        'http://lorempixel.com/1024/1024/sports/1/',
+        'http://lorempixel.com/1024/1024/sports/2/',
+        'http://lorempixel.com/1024/1024/sports/3/',
+    ]
+});
+//Open photo browser on click
+$$('.pb-standalone').on('click', function () {
+    myPhotoBrowserStandalone.open();
+});
+
+
 
 
 // Generate dynamic page
